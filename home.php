@@ -3,8 +3,9 @@
     include 'cabecalho.php';
 
     $sessionid = $_SESSION['usuario'];
+    $sessionAcess = $_SESSION['Acess'];
+    $sessionDsAcess = $_SESSION['DsAcess'];
 
-    $sessionid;
 
 
 ?>

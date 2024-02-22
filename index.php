@@ -132,12 +132,15 @@
             var var_login = document.getElementById('login').value;
             var var_senha = document.getElementById('senha').value;
 
+            upperCaselogin = var_login.toUpperCase();
+            upperCasesenha = var_senha.toUpperCase();
+
             $.ajax({
                 url: "funcoes/index/Login.php",
                 type: "POST",
                 data: {
-                    var_login: var_login,
-                    var_senha: var_senha
+                    var_login: upperCaselogin,
+                    var_senha: upperCasesenha
                 },
                 cache: false,
                 success: function(dataResult) {
@@ -148,7 +151,8 @@
             
                     }else{
 
-                        setTimeout(function(){location.href="home.php"} , 1000);  
+                        console.log(dataResult);
+                        //setTimeout(function(){location.href="home.php"} , 1000);  
                         
                     }
                 }
