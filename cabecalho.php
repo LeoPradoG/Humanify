@@ -59,7 +59,7 @@
 
         <header> 
             
-            <div style="background-color: #46606E; width: 100%; height: 35px;">
+            <div style="background-color: #5c0ae9; width: 100%; height: 35px;">
              
                 <div style="color: white; padding-left: 3%; width: 5%; height: 35px; display: flex; align-items: center; justify-content: center; font-size: 25px;">
 
@@ -67,7 +67,6 @@
 
                 </div>
                 
-
                 <div class="side_bar" id="side_bar">
             
                     <div class="div_br"></div>

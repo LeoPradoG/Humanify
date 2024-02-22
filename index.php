@@ -152,7 +152,7 @@
                     }else{
 
                         console.log(dataResult);
-                        //setTimeout(function(){location.href="home.php"} , 1000);  
+                        setTimeout(function(){location.href="home.php"} , 1000);  
                         
                     }
                 }

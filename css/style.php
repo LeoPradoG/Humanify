@@ -893,8 +893,7 @@ h99{
 .efeito-zoom:hover{ 
 	        
     animation: efeitozoom 1600ms infinite; 
-    background-color: #a9e5ff6b; 
- 
+    background-color: #5c0ae91a; 
         
 }
 
@@ -1406,7 +1405,7 @@ float: left;
         left: -200px; /* Esconda à esquerda da tela */
         width: 200px;
         height: 100vh;
-        background-color: #46606E;
+        background-color: #5c0ae9;
         color: #fff;
         transition: left 0.3s ease; /* Adicione uma transição suave ao movimento */
         z-index: 1; /* Valor alto para garantir que fique na frente */
