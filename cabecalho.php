@@ -6,6 +6,9 @@
     //CORRIGE PROBLEMAS DE HEADER (LIMPAR O BUFFER)
     ob_start();
 
+    $sessionid = $_SESSION['usuario'];
+    $sessionidCode = $_SESSION['id'];
+
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +90,7 @@
                             
                     </div>
 
-                    <div style="text-align: center;" id="nm_user_logado"></div>
+                    <div style="text-align: center;" id="nm_user_logado"><?php echo $sessionid; ?></div>
                     
                     <div class="div_br"></div>
                     <div class="div_br"></div>
