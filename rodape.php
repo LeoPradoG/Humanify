@@ -33,6 +33,23 @@
     <script>
 
 
+        atualizarHorario();
+
+        // Função para atualizar o horário a cada segundo
+        function atualizarHorario() {
+            var divHora = document.getElementById('horaAtual');
+            var dataHora = new Date();
+            var hora = dataHora.getHours();
+            var minutos = dataHora.getMinutes();
+            var segundos = dataHora.getSeconds();
+            var horaFormatada = hora + ':' + (minutos < 10 ? '0' : '') + minutos + ':' + (segundos < 10 ? '0' : '') + segundos;
+            divHora.textContent = horaFormatada;
+        }
+
+        setInterval(atualizarHorario, 1000);
+
+
+
         function exibenav(){
 
             document.getElementById('side_bar').style.left = "0";

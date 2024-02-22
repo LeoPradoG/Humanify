@@ -1434,7 +1434,28 @@ float: left;
         z-index: 1; /* Valor alto para garantir que fique na frente */
         font-weight: bold;
         color:#270;
-        
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        
+    }
+
+    .place{
+        width: 20%; 
+        height: 20%; 
+        border-radius: 5px; 
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06); 
+        border: 1px solid #eee; 
+        transition: .3s border-color;
+    }
+
+    .place::placeholder{
+
+        text-align: center;
+
+    }
+
+    .place:hover{
+
+        border: 1px solid #aaa;
+
     }
     
 

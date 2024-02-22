@@ -9,6 +9,11 @@
     $sessionid = $_SESSION['usuario'];
     $sessionidCode = $_SESSION['id'];
 
+
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $dataHoraAtual = date('m/d/Y H:i:s');
+
 ?>
 
 <!DOCTYPE html>
@@ -62,13 +67,17 @@
 
         <header> 
             
-            <div style="background-color: #5c0ae9; width: 100%; height: 35px;">
-             
+        <div style="background-color: #5c0ae9; width: 100%; height: 35px; display: flex;">
+                
                 <div style="color: white; padding-left: 3%; width: 5%; height: 35px; display: flex; align-items: center; justify-content: center; font-size: 25px;">
-
                     <i style="cursor: pointer;" class="fa-solid fa-bars open_menu" id="btn_nav" onclick="exibenav()"></i>
+                </div>
+                
+                <div style="margin-left: auto; color: white; padding-right: 10px; padding-top: 5px;" id="horaAtual">
 
                 </div>
+
+                        
                 
                 <div class="side_bar" id="side_bar">
             
@@ -82,9 +91,9 @@
                     <div class="div_br"></div>
                     <div class="div_br"></div>
 
-                    <div style="cursor: pointer; width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; font-size: 25px;">
+                    <div style="cursor: pointer; width: 100%; height: 100px; display: flex; align-items: center; justify-content: center; font-size: 25px;">
                      
-                        <div style="font-size: 100px;">
+                        <div style="font-size: 80px;">
                             <i class="fa-regular fa-circle-user"></i>
                         </div>
                             
@@ -94,6 +103,22 @@
                     
                     <div class="div_br"></div>
                     <div class="div_br"></div>
+                    
+                    
+
+                    <div class="side_efect" style="cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; border-top: solid 1px white; display: flex;">
+
+                    <div style="padding-left: 5%; width: 25%; margin-right: 10px;">
+                  
+                        <i class="fa-solid fa-key"style="font-size: 25px;" ></i>
+
+                    </div>
+
+                    <div style="width: 75%;">
+                        Trocar Senha
+                    </div>
+
+                    </div>
 
 
                     <div class="side_efect" style="cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; border-top: solid 1px white; display: flex;">
@@ -110,21 +135,7 @@
 
                     </div>
 
-                    <div class="side_efect" style="cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; border-top: solid 1px white; display: flex;">
 
-                        <div style="padding-left: 5%; width: 25%; margin-right: 10px;">
-
-                            <i class="fa-solid fa-chart-line" style="font-size: 25px;"></i>
-                        </div>
-
-                        <div style="width: 75%;">
-                            DashBoards
-                        </div>
-
-                    </div>
-
-
-                    
                     <div onclick="ExitTheSystem()" style="position: absolute; bottom: 0; cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; display: flex;">
 
                         <div  style="padding-left: 5%; width: 25%; margin-right: 10px;">

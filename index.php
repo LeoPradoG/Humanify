@@ -190,7 +190,7 @@
                        document.getElementById('Msg').style.backgroundColor = "#DFF2BF";
                        document.getElementById('Msg').style.color = "#270";
             
-                    }, 1500); 
+                    }, 1000); 
                         
 
                 }, 1500); 
