@@ -1,0 +1,29 @@
+
+            /*
+            $.ajax({
+            url: "funcoes/balanca/ajax_chama_consolidado_balanca_1.php",
+            type: "POST",
+            data: {
+
+                comando : var_comando
+ 
+            },
+
+            cache: false,
+            success: function(response) {
+                
+                var dataResult = response;
+
+                if (dataResult === '' || dataResult === null){
+
+                    console.log('Não há dados!');
+
+                }else{
+                    
+                    console.log('Resposta do Servidor: ' + dataResult);
+
+                }
+            }
+
+        });
+        */
