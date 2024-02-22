@@ -27,14 +27,10 @@
 </head>
 
 <body>
-
         <div style="background-color: #f5f1f1ab; min-height: 100vh; height: 100vh;">
-
 
             <div class="container" style="position: relative; top: 30%; transform: translateY(-30%); 
                 min-height: 1vh !important;">
-
-
 
                     <div class="div_br"></div>
 
@@ -115,6 +111,7 @@
 
 
 
+
         var meuBotao = document.getElementById('acessarButton');
 
         // Adiciona um ouvinte de eventos para a tecla "Enter"
@@ -158,7 +155,6 @@
                 }
             });
         }
-
 
     </script>
     
