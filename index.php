@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruston</title>
+    <title>HumaniFy</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="img/humanipng.png">
 
-     <!-- Bootstrap CSS -->
-     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!--CHAMADNO CSS BOOTSTRAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -47,15 +49,20 @@
 
                                 <div style="width: 100%; text-align: center;">
 
-                                    <img src="img/ruston.png" />
+                                    <img src="img/humanipng.png" />
 
                                 </div>
 
                                 <div class="div_br"></div>
                                 <div class="div_br"></div>
+                                <div class="centralizar">
+                                    <span style="font-weight: bold; color:#999494; font-size: 25px;">HumaniFy</span>
+                                </div>
+                                <div class="div_br"> </div>
+                                <div class="div_br"> </div>
+                                <div class="div_br"> </div>
 
                                 <div class="centralizar">
-                                <i class=""></i>
                                     <h13><i class="fa-regular fa-user efeito-zoom" aria-hidden="true"></i> <span style="font-weight: bold; color:#999494;">Acesso</span></h13>
                                 </div>
 
@@ -74,6 +81,12 @@
                                 <button type="submit" onclick="ajax_valida_login()" id="acessarButton" class="botao_home" style="padding-top: 14px; padding-bottom: 14px;"> <i class="fa fa-key" aria-hidden="true"></i> Acessar</button>
                             </div>
 
+                            <div class="div_br"> </div>
+
+                            <div class="centralizar">
+                                    <span style="font-weight: bold; color:#999494; font-size: 15px;">V1.0</span>
+                            </div>
+
                             <div id="mensagem_acoes"></div>
 
 
@@ -85,9 +98,6 @@
 
 
             </div>
-    
-            <!--<div class="loader" style="z-index: 99"></div>-->
-
 
         </div>
 

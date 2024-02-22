@@ -216,14 +216,14 @@ p,li{
 	border-style: solid;
 	border-width: thin;
 	border-radius: 5px;  
-	border-color: #ee2235;
+	border-color: #5c0ae9;
 	
     text-align: center;
     text-decoration: none;
     display: inline-block;	
 	
     color: rgba(255,255,255,.99);
-    background-color: #ee2235;
+    background-color: #5c0ae9;
 	font-size: 14px;
 	font-weight: bold;
 	
