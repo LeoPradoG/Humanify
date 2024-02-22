@@ -27,7 +27,10 @@
 </head>
 
 <body>
+        
         <div style="background-color: #f5f1f1ab; min-height: 100vh; height: 100vh;">
+            
+            <div class="alertMsg" id="Msg"></div>
 
             <div class="container" style="position: relative; top: 30%; transform: translateY(-30%); 
                 min-height: 1vh !important;">
@@ -144,17 +147,60 @@
 
                     if (dataResult == 0 ) {
 
-                        console.log('Login Invalido Contate o administrador do sistema!');
+                        alertMsg(0);
             
                     }else{
 
                         console.log(dataResult);
-                        setTimeout(function(){location.href="home.php"} , 1000);  
+
+                        alertMsg(1);
+
+                        setTimeout(function(){location.href="home.php"} , 2000);  
                         
                     }
                 }
             });
         }
+
+        function alertMsg(parameter){
+
+            if(parameter == 1){
+
+                document.getElementById('Msg').style.right = "0";
+                document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-check"></i>   Login Realizado com Sucesso, Aguarde!';
+
+                setTimeout(function() {
+                    document.getElementById('Msg').style.right = "-450px";
+                }, 1500); // 60000 milissegundos = 1 minuto
+                
+                
+
+            }else{
+
+                document.getElementById('Msg').style.right = "0";
+                document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-xmark"></i>   Login ou Senha Incorretos!';
+                document.getElementById('Msg').style.backgroundColor = "#FFBABA";
+                document.getElementById('Msg').style.color = "#D8000C";
+
+                setTimeout(function() {
+                    document.getElementById('Msg').style.right = "-450px";
+
+                    setTimeout(function() {
+
+                       document.getElementById('Msg').style.backgroundColor = "#DFF2BF";
+                       document.getElementById('Msg').style.color = "#270";
+            
+                    }, 1500); 
+                        
+
+                }, 1500); 
+
+            }
+            
+
+        };
+
+        
 
     </script>
     

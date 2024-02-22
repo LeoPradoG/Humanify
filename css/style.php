@@ -1418,38 +1418,24 @@ float: left;
 
     }
 
-    .fc-col-header-cell-cushion{
+    .alertMsg{
 
-        text-decoration: none;
-        color: black;
-
-    }
-
-    
-    .fc-col-header-cell-cushion:hover{
-
-        text-decoration: none;
-        color: #46606E;
-        cursor: pointer;
-
-    }
-
-    .fc-daygrid-day-number{
-
-        text-decoration: none;
-        color: black;
-
-    }
-
-
-    .fc-daygrid-day-number:hover{
-
-        text-decoration: none;
-        color: black;
-        cursor: pointer;
-
+        width: 30%;
+        height: 40px;
+        border-radius: 10px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        right: -450px; /* Esconda à esquerda da tela 400 */ 
+        margin: 10px 10px 10px 10px;
+        position: fixed;
+        background-color: #DFF2BF;
+        transition: right 0.6s ease; /* Adicione uma transição suave ao movimento */
+        z-index: 1; /* Valor alto para garantir que fique na frente */
+        font-weight: bold;
+        color:#270;
+        
     }
     
-
 
 </style>

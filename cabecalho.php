@@ -17,9 +17,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/humanipng.png">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Portal Ruston</title>
+    <title>HumaniFy</title>
     <!--CSS-->
     <?php 
         include 'css/style.php';

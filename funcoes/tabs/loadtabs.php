@@ -23,7 +23,7 @@ $Acess = $_SESSION['acessos'];
     
                 <div style="width: 100%; height: 20%; text-align: center; padding-top: 5%;">Acessos</div>
                 <div onclick="redirect_user(1)"style="width: 100%; height: 80%; position: relative;">
-                    <div style="color: #46606E; width: 100%; position: absolute; bottom: 0; padding-left: 10%; padding-bottom: 3%; font-size: 45px;">
+                    <div style="color: #5c0ae9; width: 100%; position: absolute; bottom: 0; padding-left: 10%; padding-bottom: 3%; font-size: 45px;">
                     <i class="fa-solid fa-users"></i>
 
                     </div>
