@@ -32,6 +32,8 @@
             
             <div class="alertMsg" id="Msg"></div>
 
+
+
             <div class="container" style="position: relative; top: 30%; transform: translateY(-30%); 
                 min-height: 1vh !important;">
 
@@ -113,8 +115,6 @@
     <script>
 
 
-
-
         var meuBotao = document.getElementById('acessarButton');
 
         // Adiciona um ouvinte de eventos para a tecla "Enter"
@@ -149,7 +149,7 @@
 
                         alertMsg(0);
             
-                    }else{
+                    }else if(dataResult == 1){
 
                         console.log(dataResult);
 
@@ -157,6 +157,12 @@
 
                         setTimeout(function(){location.href="home.php"} , 2000);  
                         
+                    }else{
+
+                        console.log(dataResult);
+
+                        alertMsg(2);
+
                     }
                 }
             });
@@ -175,7 +181,7 @@
                 
                 
 
-            }else{
+            }else if(parameter == 0){
 
                 document.getElementById('Msg').style.right = "0";
                 document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-xmark"></i>   Login ou Senha Incorretos!';
@@ -194,6 +200,31 @@
                         
 
                 }, 1500); 
+
+            }else{
+
+                document.getElementById('Msg').style.right = "0";
+                document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>   Necessario realizar a troca de senha!';
+                document.getElementById('Msg').style.backgroundColor = "#feefb3";
+                document.getElementById('Msg').style.color = "#b58129";
+
+                setTimeout(function() {
+
+                    document.getElementById('Msg').style.right = "-450px";
+
+                    setTimeout(function() {
+
+                       document.getElementById('Msg').style.backgroundColor = "#FFBABA";
+                       document.getElementById('Msg').style.color = "#270";
+
+
+            
+                    }, 1000); 
+                        
+                    
+
+                }, 1500); 
+
 
             }
             

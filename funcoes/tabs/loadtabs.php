@@ -12,7 +12,7 @@ $Acess = $_SESSION['acessos'];
         
         <?php
 
-        if(in_array(3,$Acess)){
+        if(in_array(2,$Acess)){
 
         ?>
 

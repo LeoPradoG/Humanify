@@ -12,7 +12,8 @@
     //VERIFICANDO EXISTENCIA DO USUARIO NO BANCO DE DADOS PGSQL
     $Consulta = "SELECT usu.id_usuario,
                         usu.nm_usuario,
-                        sen.ds_senha
+                        sen.ds_senha,
+                        usu.sn_primeiro_acesso
                  FROM usuarios usu
                  INNER JOIN usu_senhas sen
                  ON sen.ID_USUARIO = usu.ID_USUARIO
@@ -35,14 +36,25 @@
         $Line_usu =  $row['nm_usuario'];
         $Line_pass = $row['ds_senha'];
         $Line_id = $row['id_usuario'];
+        $Line_SN = $row['sn_primeiro_acesso'];
 
         if($Line_usu == '' || $Line_pass == '' || $Line_id == ''){
             
             echo 0;
     
         }else{
+
+            if($Line_SN == 'S'){
+
+                echo 2;
+                
+            }else{
+
+                echo 1;
+
+            }
     
-            echo 1;
+            
     
         }
             
