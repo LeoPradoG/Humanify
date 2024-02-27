@@ -1457,9 +1457,6 @@ float: left;
         border: 1px solid #aaa;
 
     }
-    
-
-    
 
     
 

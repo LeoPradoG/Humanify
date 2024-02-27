@@ -27,7 +27,32 @@
 </head>
 
 <body>
-        
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_altera_senha" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" >
+            <div class="modal-content" style="max-width: 300px; margin: 0 auto;">
+                <div class="modal-header">
+                    <div style="width: 100%; text-align:center; ">
+                        <h5 class="modal-title" id="exampleModalLongTitle" style="width: 100%;">
+                            <span style="font-weight: bold; color:#999494; font-size: 25px;">Alterar Senha</span>
+                        </h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="corpo_modal_mudar_senha"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" onclick="AjaxUpdatePassWord()" style="background-color: #5c0ae9 !important; border-color: #5c0ae9 !important;">Salvar</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
         <div style="background-color: #f5f1f1ab; min-height: 100vh; height: 100vh;">
             
             <div class="alertMsg" id="Msg"></div>
@@ -85,7 +110,7 @@
                             <div class="div_br"> </div>
 
                             <div class="centralizar">
-                                    <span style="font-weight: bold; color:#999494; font-size: 15px;">V1.0</span>
+                                    <span style="font-weight: bold; color:#999494; font-size: 15px;">Version 1.0</span>
                             </div>
 
                             <div id="mensagem_acoes"></div>
@@ -217,10 +242,12 @@
                        document.getElementById('Msg').style.backgroundColor = "#FFBABA";
                        document.getElementById('Msg').style.color = "#270";
 
-
             
                     }, 1000); 
                         
+                    $('#modal_altera_senha').modal('show')
+                    
+                    $('#corpo_modal_mudar_senha').load('funcoes/index/ResetPassWord.php');
                     
 
                 }, 1500); 
@@ -231,6 +258,75 @@
 
         };
 
+        function AjaxUpdatePassWord(){
+
+            var Login = document.getElementById('login').value;
+            var oldPassWord = document.getElementById('OPW').value;
+            var NewPassWord = document.getElementById('NPW').value;
+            var ConfirmNewPW = document.getElementById('confirm').value;
+
+            if(NewPassWord == ConfirmNewPW){
+
+
+                $.ajax({
+                    url: "funcoes/index/AjaxUpdatePassWord.php",
+                    type: "POST",
+                    data: {
+                        Login: Login,
+                        NewPassWord: NewPassWord,
+                        oldPassWord: oldPassWord
+                    },
+                    cache: false,
+                    success: function(dataResult) {
+
+                        if(dataResult == 1){
+
+
+                            $('#modal_altera_senha').modal('hide');
+
+                            document.getElementById('Msg').style.right = "0";
+                            document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-check"></i>   Senha alterada com Sucesso!';
+                            document.getElementById('Msg').style.backgroundColor = "#DFF2BF";
+
+                            setTimeout(function() {
+                                document.getElementById('Msg').style.right = "-450px";
+                            }, 1500); // 60000 milissegundos = 1 minuto
+
+                            document.getElementById('senha').value = '';
+                            document.getElementById('senha').value = NewPassWord;
+                            
+
+                        }else{
+
+                            console.log('error: '+dataResult);
+                            document.getElementById('Msg').style.right = "0";
+                            document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-xmark"></i>   Erro, Contate o Administrador!';
+                            document.getElementById('Msg').style.backgroundColor = "#FFBABA";
+                            document.getElementById('Msg').style.color = "#D8000C";
+
+                            setTimeout(function() {
+
+                                document.getElementById('Msg').style.right = "-450px";
+
+                                setTimeout(function() {
+
+                                document.getElementById('Msg').style.backgroundColor = "#DFF2BF";
+                                document.getElementById('Msg').style.color = "#270";
+                        
+                                }, 1000); 
+                                    
+
+                            }, 1500); 
+                            
+
+                        }
+                    }
+                });
+            
+            }
+
+
+        }
         
 
     </script>
