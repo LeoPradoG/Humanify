@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HumaniFy</title>
+    <title>Quantum</title>
     
-    <link rel="shortcut icon" type="image/x-icon" href="img/humanipng.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Quantum.png">
 
     <!-- Bootstrap CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,8 +57,6 @@
             
             <div class="alertMsg" id="Msg"></div>
 
-
-
             <div class="container" style="position: relative; top: 30%; transform: translateY(-30%); 
                 min-height: 1vh !important;">
 
@@ -75,14 +73,14 @@
 
                                 <div style="width: 100%; text-align: center;">
 
-                                    <img src="img/humanipng.png" />
+                                    <img style="max-width:200px; max-height:150px; width: auto; height: auto;" src="img/Quantum.png" />
 
                                 </div>
 
                                 <div class="div_br"></div>
                                 <div class="div_br"></div>
                                 <div class="centralizar">
-                                    <span style="font-weight: bold; color:#999494; font-size: 25px;">HumaniFy</span>
+                                    <span style="font-weight: bold; color:#999494; font-size: 25px;">Quantum</span>
                                 </div>
                                 <div class="div_br"> </div>
                                 <div class="div_br"> </div>

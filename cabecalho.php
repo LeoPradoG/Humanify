@@ -22,9 +22,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/humanipng.png">
+    <link rel="icon" href="img/Quantum.png">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>HumaniFy</title>
+    <title>Quantum</title>
     <!--CSS-->
     <?php 
         include 'css/style.php';
@@ -67,7 +67,7 @@
 
         <header> 
             
-        <div style="background-color: #5c0ae9; width: 100%; height: 35px; display: flex;">
+        <div style="background-color: #373028; width: 100%; height: 35px; display: flex;">
                 
                 <div style="color: white; padding-left: 3%; width: 5%; height: 35px; display: flex; align-items: center; justify-content: center; font-size: 25px;">
                     <i style="cursor: pointer;" class="fa-solid fa-bars open_menu" id="btn_nav" onclick="exibenav()"></i>
@@ -153,9 +153,6 @@
             
                 </div>
                 
-                
-            </div>
-
         </header>
 
 

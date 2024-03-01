@@ -216,14 +216,14 @@ p,li{
 	border-style: solid;
 	border-width: thin;
 	border-radius: 5px;  
-	border-color: #5c0ae9;
+	border-color: #373028;
 	
     text-align: center;
     text-decoration: none;
     display: inline-block;	
 	
     color: rgba(255,255,255,.99);
-    background-color: #5c0ae9;
+    background-color: #373028;
 	font-size: 14px;
 	font-weight: bold;
 	
@@ -238,11 +238,11 @@ p,li{
     display: inline-block;	
 	
     color: rgba(255,255,255,.99);
-    background-color: #ee2235;
+    background-color: #8E7C68;
 	font-size: 14px;
 	font-weight: bold;
-    background-color: #ee2235; 
-    border-color: #cb646d;
+    background-color: #8E7C68; 
+    border-color: #8E7C68;
 
     animation: efeitozoomhome 1600ms infinite; 
 }
@@ -1405,7 +1405,7 @@ float: left;
         left: -200px; /* Esconda à esquerda da tela */
         width: 200px;
         height: 100vh;
-        background-color: #5c0ae9;
+        background-color: #373028;
         color: #fff;
         transition: left 0.3s ease; /* Adicione uma transição suave ao movimento */
         z-index: 1; /* Valor alto para garantir que fique na frente */
@@ -1414,7 +1414,7 @@ float: left;
     
     .side_efect:hover{
 
-            background-color: #a9e5ff6b;
+            background-color: #8E7C68;
 
     }
 
